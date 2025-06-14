@@ -1,0 +1,383 @@
+*,::after,::before {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+.above {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: brown;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.above h1 {
+    width: 180px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.icon {
+    background-image: url('icon.png');
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-position: center;
+}
+
+#drop button {
+    background-color: brown;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#drop button ul li {
+    list-style-type: none;
+    width: 30px;
+    background-color: rgb(255, 255, 255);
+    padding: 1px;
+    margin: 5px;
+}
+
+.dropdown {
+    color: white;
+    width: 200px;
+    float: inline-end;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+    background-color: rgb(51, 3, 3);
+    position: fixed;
+    top: 80px;
+    right: 2px;
+
+    animation: float 1s ease-out 1;
+}
+
+@keyframes float {
+    0%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.dropdown a {
+    color: white;
+    text-decoration: none;
+}
+
+.intro {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-wrap: nowrap;
+    background-image: url('eb371879fef1eb14c5650b38684cd957.jpg');
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*style start*/
+.int-left {
+    width: 50%;
+    color: rgb(34, 6, 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: color 1s ease-out 1;
+}
+
+.int-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+
+    animation: color-reverse 1s ease-out 1;
+}
+
+@keyframes color {
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes color-reverse {
+    0%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/*style end*/
+/*box start*/
+.int-left h1 {
+    animation: swap 1s ease-out 1;
+}
+
+@keyframes swap {
+    0%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.int-right h1 {
+    animation: swap-reverse 1s ease-out 1;
+}
+
+@keyframes swap-reverse {
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/*box end*/
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.below {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(34, 3, 3);
+    color: white;
+}
+
+.below p:first-child {
+    text-align: center;
+    border-bottom: 2px solid white;
+    width: 50%;
+    margin: auto;
+}
+
+.below-content {
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.category {
+    border: 1px solid white;
+    padding: 5px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.category img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    height: 210px;
+    object-fit: cover;
+}
+
+.view {
+    background-color: rgb(245, 132, 27);
+    border: none;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.highlights {
+    background-color: white;
+}
+
+.pizza-info {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pizza-info img {
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.pizza-info p:nth-of-type(2) {
+    font-size: 25px;
+    font-family: cursive;
+    margin-top: -10px;
+}
+
+.pizza-info h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(58, 8, 8);
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+table {
+    width: 100%;
+    background-color: brown;
+    color: aliceblue;
+    display: none;
+
+    animation: appear 0.5s ease-out 1;
+}
+
+td p {
+    font-size: 10px;
+}
+
+tbody ,tr ,td {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+}
+
+td {
+    text-align: left;
+}
+
+.appear {
+    background-color: rgb(235, 141, 18);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.sunday-offers {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sunday-offers img {
+    width: 100px;
+    height: 100px;
+}
+
+.sunday-offers h2 {
+    width: 90%;
+    background-color: rgb(206, 75, 23);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.sunday-menu {
+    background-image: url('IMG-20250612-WA0007.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 70%;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.sunday-menu h3 {
+    background-color: rgba(0, 0, 0, 0.445);
+    color: white;
+}
+
+.sunday-menu h1 {
+    text-align: center;
+    color: white;
+    font-family: cursive;
+}
+
+.sunday-menu2 {
+    background-image: url('IMG-20250612-WA0010.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 70%;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.sunday-menu2 h3,.sunday-menu2 p {
+    background-color: rgba(0, 0, 0, 0.445);
+    color: white;
+}
+
+.sunday-menu2 h1 {
+    text-align: center;
+    color: aliceblue;
+    font-family: cursive;
+}
+
+footer{
+    background-color: rgb(99, 20, 20);
+    color: white;
+    padding: 10px;
+}
+
+.foot a {
+    color: white;
+}
+
+.follow {
+    text-align: center;
+}
+
+.follow a {
+    color: aliceblue;
+}
+
+@media (min-width: 600px) {
+    .object {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .pizza-info img {
+        width: 55%;
+        object-fit: cover;
+    }
+}
