@@ -1,5 +1,6 @@
 *,::after,::before {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -61,7 +62,7 @@ header {
     display: none;
     background-color: rgb(51, 3, 3);
     position: fixed;
-    top: 80px;
+    top: 0;
     right: 2px;
 
     animation: float 1s ease-out 1;
@@ -79,6 +80,24 @@ header {
 .dropdown a {
     color: white;
     text-decoration: none;
+}
+
+.cancel {
+    display: block;
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    width: 30px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.cancel:hover {
+    background-color: aliceblue;
+    color: black;
+    font-weight: bold;
 }
 
 .intro {
@@ -226,6 +245,8 @@ header {
     width: 100%;
     margin-top: 20px;
     text-align: center;
+    border-top: 1px solid black;
+    padding: 10px;
 }
 
 .pizza-info img {
@@ -250,33 +271,12 @@ header {
     font-weight: bolder;
 }
 
-table {
-    width: 100%;
-    background-color: brown;
-    color: aliceblue;
+.table {
+    background-color: rgb(44, 3, 3);
+    color: white;
     display: none;
 
-    animation: appear 0.5s ease-out 1;
-}
-
-td p {
-    font-size: 10px;
-}
-
-tbody ,tr ,td {
-    border: 1px solid rgb(255, 255, 255);
-    padding: 5px;
-}
-
-td {
-    text-align: left;
-}
-
-.appear {
-    background-color: rgb(235, 141, 18);
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
+    animation: appear 0.4s ease-out 1;
 }
 
 @keyframes appear {
@@ -286,6 +286,92 @@ td {
     100%{
         opacity: 1;
     }
+}
+
+.breakfast-table {
+    background-color: rgb(44, 3, 3);
+    color: white;
+    display: none;
+
+    animation: appear 0.4s ease-out 1;
+}
+
+.drink-table {
+    background-color: rgb(44, 3, 3);
+    color: white;
+    display: none;
+
+    animation: appear 0.4s ease-out 1;
+}
+
+.lunch-table {
+    background-color: rgb(44, 3, 3);
+    color: white;
+    display: none;
+
+    animation: appear 0.4s ease-out 1;
+}
+
+.snack-table {
+    background-color: rgb(44, 3, 3);
+    color: white;
+    display: none;
+
+    animation: appear 0.4s ease-out 1;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.item p:nth-of-type(1) i {
+    font-size: 10px;
+    display: block;
+}
+
+.item p:nth-of-type(2) {
+    font-size: 20px;
+    display: inline-block;
+    margin: 0;
+}
+
+.appear {
+    background-color: rgb(177, 90, 19);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.break {
+    background-color: rgb(177, 90, 19);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.drink {
+    background-color: rgb(177, 90, 19);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.lunch-btn {
+    background-color: rgb(177, 90, 19);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.snack-btn {
+    background-color: rgb(177, 90, 19);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .sunday-offers {
@@ -367,11 +453,85 @@ footer{
     color: aliceblue;
 }
 
+.quick-click {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-x: scroll;
+    gap: 20px;
+    position: sticky;
+    top: 75px;
+    background-color: rgb(243, 236, 236);
+    padding: 5px;
+    font-family: cursive;
+}
+
+.quick-click a {
+    color: white;
+    text-decoration: none;
+}
+
+.breakfast {
+    width: 100px;
+    background-color: brown;
+    padding: 4px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.drinks {
+    width: 100px;
+    background-color: brown;
+    padding: 4px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.lunch {
+    width: 100px;
+    background-color: brown;
+    padding: 4px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.snacks {
+    width: 100px;
+    background-color: brown;
+    padding: 4px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.specials {
+    width: 100px;
+    background-color: brown;
+    padding: 4px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.kids-menu {
+    width: 100px;
+    background-color: brown;
+    padding: 4px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.bevarages {
+    width: 100px;
+    background-color: brown;
+    padding: 4px;
+    text-align: center;
+    border-radius: 10px;
+}
+
 @media (min-width: 600px) {
     .object {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         padding: 10px;
     }
@@ -379,5 +539,9 @@ footer{
     .pizza-info img {
         width: 55%;
         object-fit: cover;
+    }
+
+    .obj-exp {
+        width: 44%;
     }
 }

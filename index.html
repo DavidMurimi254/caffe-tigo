@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caffe tigo</title>
     <link rel="stylesheet" href="tigo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="icon" href="icon.png" type="image/png">
 </head>
 <body>
     <header>
@@ -22,8 +22,16 @@
             </div>
         </div>
     </header>
+    <div class="quick-click">
+        <a href="#breakfast"><div class="breakfast">Breakfast</div></a>
+        <a href="#drinks"><div class="drinks">Drinks</div></a>
+        <a href="#lunch"><div class="lunch">Lunch</div></a>
+        <a href="#snacks"><div class="snacks">Snacks</div></a>
+        <a href="#special"><div class="specials">Specials</div></a>
+    </div>
     <section class="content">
        <div class="dropdown">
+        <p class="cancel" title="close">x</p>
         <a href="menu.html"><p>Menu</p></a>
         <a href="tel:+254784858877"><p>Contact us</p></a>
         <a href="https://www.facebook.com/share/16dAdK6gnH"><p>Follow us on facebook</p></a>
@@ -73,7 +81,7 @@
             <div class="pizza-info">
                 <div class="object">
                    <img src="d62b911b20b1f0f282e5d132204288ac.jpg" alt="pizza photo">
-                   <div>
+                   <div class="obj-exp">
                       <p>CAFFE TIGO</p>
                       <p>Expertly Crafted</p>
                       <h1>PIZZA</h1>
@@ -81,36 +89,202 @@
                    </div>
                 </div>
                 <p>All of our pizza dough is made freshly daily, hand made and rolled in house. Each pizza is then finished with the finest gourment ingredients.</p>
-                <table>
-                    <thead>
-                        <th>PIZZA</th>
-                        <th>Price</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Magherita pizza <p>Pamadaro sauce, fresh basil,mozarella, diced onion</p></td>
-                            <td>Ksh 700</td>
-                        </tr>
-                        <tr>
-                            <td>Veggies <p>Griled mushroom, Pamadaro mozarella cheese, onion, bell pepper, black olives</p></td>
-                            <td>Ksh 750</td>
-                        </tr>
-                        <tr>
-                            <td>BBQ chicken <p>BBQ chicken, pamadora, onion, cilantro, mozearella</p></td>
-                            <td>Ksh 900</td>
-                        </tr>
-                        <tr>
-                            <td>Chicken tikka <p>chicken tikka,grilled onion,pamadora,cheese, bell peppers</p></td>
-                            <td>Ksh 900</td>
-                        </tr>
-                        <tr>
-                            <td>Hawaii pizza <p>BBQ chicken, pamadora, onion, cilantro, mozearella</p></td>
-                            <td>Ksh 900</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table">
+                    <h3>PIZZA</h3>
+                    <div class="item">
+                        <p>Magherita pizza <i>Pamadaro sauce, fresh basil,mozarella, diced onion</i></p>
+                        <p>Ksh 700</p>
+                    </div>
+
+                    <div class="item">
+                        <p>Veggies <i>Griled mushroom, Pamadaro mozarella cheese, onion, bell pepper, black olives</i></p>
+                        <p>Ksh 750</p>
+                    </div>
+
+                    <div class="item">
+                        <p>BBQ chicken <i>BBQ chicken, pamadora, onion, cilantro, mozearella</i></p>
+                        <p>Ksh 900</p>
+                    </div>
+
+                    <div class="item">
+                        <p>Chicken tikka <i>Chicken tikka,grilled onion,pamadora,cheese, bell peppers</i></p>
+                        <p>Ksh 900</p>
+                    </div>
+
+                    <div class="item">
+                        <p>Hawaii pizza <i>BBQ chicken, pamadora, onion, cilantro, mozearella</i></p>
+                        <p>Ksh 900</p>
+                    </div>
+                </div>
+            </div>
+<!--breakfast-->
+            <p id="breakfast"></p>
+            <div class="pizza-info">
+                <div class="object">
+                   <img src="ee2e6e50036468283e246f142111a87d.jpg" alt="pizza photo">
+                   <div class="obj-exp">
+                      <p>CAFFE TIGO</p>
+                      <p>Morning Breakfast</p>
+                      <h1>BREAKFAST</h1>
+                      <button class="break">View breakfast menu</button>
+                   </div>
+                </div>
+                <p>Start your day right with our delicious breakfast options fresh,hearty,and made just for you!</p>
+                <div class="breakfast-table">
+                    <h3>Breakfast</h3>
+                    <div class="item">
+                        <p>Two eggs with toast</p>
+                        <p>Ksh 250</p>
+                    </div>
+
+                    <div class="item">
+                        <p>Omlletes plain</p>
+                        <p>Ksh 350</p>
+                    </div>
+
+                    <div class="item">
+                        <p>Sunshine wrap <i>(Two eggs, Scrambled, Tomatoes,Diced sausage)</i></p>
+                        <p>Ksh 500</p>
+                    </div>
+
+                    <div class="item">
+                        <p>Crepe pancake</p>
+                        <p>Ksh 300</p>
+                    </div>
+
+                    <div class="item">
+                        <p>Soup of the day</p>
+                        <p>Ksh 250</p>
+                    </div>
+                </div>
+            </div>
+<!--drinks-->
+            <p id="drinks"></p>
+            <div class="pizza-info">
+                <div class="object">
+                   <img src="c2fbaea43bd393464e76b3f817264e8e.jpg" alt="pizza photo">
+                   <div class="obj-exp">
+                      <p>CAFFE TIGO</p>
+                      <p>Cold drinks or hot drinks</p>
+                      <h1>Drinks</h1>
+                      <button class="drink">View drink menu</button>
+                   </div>
+                </div>
+                <p>Quench your thirst with our refreshing cold drinks or warm up with our cozy hot bevarages perfect for any mood, any time!</p>
+                <div class="drink-table">
+                    <h3>Drinks</h3>
+                    <div class="item">
+                        <p>Classic iced Tea</p>
+                        <p>Ksh 200</p>
+                    </div>
+
+                    <div class="item">
+                        <p>Iced tangawizi</p>
+                        <p>Ksh 250</p>
+                    </div>
+
+                    <div class="item">
+                        <p>Iced Green tea</p>
+                        <p>Ksh 250</p>
+                    </div>
+
+                    <div class="item">
+                        <p>Iced hibiscus</p>
+                        <p>Ksh 250</p>
+                    </div>
+
+                    <div class="item">
+                        <p>Iced Coffee</p>
+                        <p>Ksh 200</p>
+                    </div>
+                </div>
             </div>
 
+<!--lunch-->
+            <p id="lunch"></p>
+            <div class="pizza-info">
+                <div class="object">
+                   <img src="184e766a9726d49be47bd4ba8fd835c3.jpg" alt="pizza photo">
+                   <div class="obj-exp">
+                      <p>CAFFE TIGO</p>
+                      <p>Warm lunch</p>
+                      <h1>Lunch</h1>
+                      <button class="lunch-btn">View lunch menu</button>
+                   </div>
+                </div>
+                <p>Quench your thirst with our refreshing cold drinks or warm up with our cozy hot bevarages perfect for any mood, any time!</p>
+                <div class="lunch-table">
+                    <h3>Drinks</h3>
+                    <div class="item">
+                        <p>Beef filet streak</p>
+                        <p>Ksh 850</p>
+                    </div>
+
+                    <div class="item">
+                        <p>Flame grilled Quarter chicken</p>
+                        <p>Ksh 900</p>
+                    </div>
+
+                    <div class="item">
+                        <p>Grilled fish fillet</p>
+                        <p>Ksh 800</p>
+                    </div>
+
+                    <div class="item">
+                        <p>Griled Lamp Chops with a mint souce</p>
+                        <p>Ksh 1,100</p>
+                    </div>
+
+                    <div class="item">
+                        <p>Chicken mushroom spaghetti</p>
+                        <p>Ksh 700</p>
+                    </div>
+                </div>
+            </div>
+
+<!--snacks-->
+            <p id="snacks"></p>
+            <div class="pizza-info">
+                <div class="object">
+                   <img src="2b44a58009488dabbbe3096ac22d7d70.jpg" alt="pizza photo">
+                   <div class="obj-exp">
+                      <p>CAFFE TIGO</p>
+                      <p>Cool snacks</p>
+                      <h1>Snacks</h1>
+                      <button class="snack-btn">View snacks menu</button>
+                   </div>
+                </div>
+                <p>Grab a quick bite from our delicious selection of snacks tasty, satisfying, and perfect on the go!</p>
+                <div class="snack-table">
+                    <h3>Snack</h3>
+                    <div class="item">
+                        <p>Beef/vegetable samosas</p>
+                        <p>Ksh 200</p>
+                    </div>
+
+                    <div class="item">
+                        <p>Beef sausages (2pcs)</p>
+                        <p>Ksh 250</p>
+                    </div>
+
+                    <div class="item">
+                        <p>Chicken pie</p>
+                        <p>Ksh 250</p>
+                    </div>
+
+                    <div class="item">
+                        <p>Chapati</p>
+                        <p>Ksh 150</p>
+                    </div>
+
+                    <div class="item">
+                        <p>Beef bacon</p>
+                        <p>Ksh 200</p>
+                    </div>
+                </div>
+            </div>
+
+            <p id="special"></p>
             <div class="offers">
                 <div class="sunday-offers">
                     <img src="icon.png" alt="">
